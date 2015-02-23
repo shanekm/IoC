@@ -1,0 +1,3 @@
+C:\Users\Shane.Kmiecik\Documents\Visual Studio 2013\Projects\IoC\StartProject\bin\Debug\StartProject.exe.config
+C:\Users\Shane.Kmiecik\Documents\Visual Studio 2013\Projects\IoC\StartProject\obj\Debug\StartProject.exe
+C:\Users\Shane.Kmiecik\Documents\Visual Studio 2013\Projects\IoC\StartProject\obj\Debug\StartProject.pdb

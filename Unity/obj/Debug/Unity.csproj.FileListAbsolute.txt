@@ -1,0 +1,14 @@
+c:\users\shane.kmiecik\documents\visual studio 2013\Projects\IoC\Unity\bin\Debug\Unity.exe.config
+c:\users\shane.kmiecik\documents\visual studio 2013\Projects\IoC\Unity\bin\Debug\Unity.exe
+c:\users\shane.kmiecik\documents\visual studio 2013\Projects\IoC\Unity\bin\Debug\Unity.pdb
+c:\users\shane.kmiecik\documents\visual studio 2013\Projects\IoC\Unity\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+c:\users\shane.kmiecik\documents\visual studio 2013\Projects\IoC\Unity\bin\Debug\Microsoft.Practices.Unity.dll
+c:\users\shane.kmiecik\documents\visual studio 2013\Projects\IoC\Unity\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+c:\users\shane.kmiecik\documents\visual studio 2013\Projects\IoC\Unity\bin\Debug\StartProject.exe
+c:\users\shane.kmiecik\documents\visual studio 2013\Projects\IoC\Unity\bin\Debug\StartProject.pdb
+c:\users\shane.kmiecik\documents\visual studio 2013\Projects\IoC\Unity\bin\Debug\Microsoft.Practices.Unity.xml
+c:\users\shane.kmiecik\documents\visual studio 2013\Projects\IoC\Unity\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+c:\users\shane.kmiecik\documents\visual studio 2013\Projects\IoC\Unity\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+c:\users\shane.kmiecik\documents\visual studio 2013\Projects\IoC\Unity\obj\Debug\Unity.csprojResolveAssemblyReference.cache
+c:\users\shane.kmiecik\documents\visual studio 2013\Projects\IoC\Unity\obj\Debug\Unity.exe
+c:\users\shane.kmiecik\documents\visual studio 2013\Projects\IoC\Unity\obj\Debug\Unity.pdb

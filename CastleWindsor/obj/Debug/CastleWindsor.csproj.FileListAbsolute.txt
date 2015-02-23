@@ -1,0 +1,12 @@
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\CastleWindsor\bin\Debug\CastleWindsor.exe.config
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\CastleWindsor\bin\Debug\CastleWindsor.exe
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\CastleWindsor\bin\Debug\CastleWindsor.pdb
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\CastleWindsor\bin\Debug\Castle.Core.dll
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\CastleWindsor\bin\Debug\Castle.Windsor.dll
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\CastleWindsor\bin\Debug\StartProject.exe
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\CastleWindsor\bin\Debug\StartProject.pdb
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\CastleWindsor\bin\Debug\Castle.Core.xml
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\CastleWindsor\bin\Debug\Castle.Windsor.xml
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\CastleWindsor\obj\Debug\CastleWindsor.csprojResolveAssemblyReference.cache
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\CastleWindsor\obj\Debug\CastleWindsor.exe
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\CastleWindsor\obj\Debug\CastleWindsor.pdb

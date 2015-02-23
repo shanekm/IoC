@@ -1,0 +1,12 @@
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\StructureMap\bin\Debug\StructureMap.exe.config
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\StructureMap\bin\Debug\StructureMap.exe
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\StructureMap\bin\Debug\StructureMap.pdb
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\StructureMap\bin\Debug\StartProject.exe
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\StructureMap\bin\Debug\StructureMap.dll
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\StructureMap\bin\Debug\StructureMap.Net4.dll
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\StructureMap\bin\Debug\StartProject.pdb
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\StructureMap\bin\Debug\StructureMap.xml
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\StructureMap\bin\Debug\StructureMap.Net4.pdb
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\StructureMap\obj\Debug\StructureMap.csprojResolveAssemblyReference.cache
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\StructureMap\obj\Debug\StructureMap.exe
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\StructureMap\obj\Debug\StructureMap.pdb

@@ -1,0 +1,10 @@
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\Ninject\bin\Debug\Ninject.exe.config
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\Ninject\bin\Debug\Ninject.exe
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\Ninject\bin\Debug\Ninject.pdb
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\Ninject\bin\Debug\Ninject.dll
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\Ninject\bin\Debug\StartProject.exe
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\Ninject\bin\Debug\StartProject.pdb
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\Ninject\bin\Debug\Ninject.xml
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\Ninject\obj\Debug\Ninject.csprojResolveAssemblyReference.cache
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\Ninject\obj\Debug\Ninject.exe
+C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\Ninject\obj\Debug\Ninject.pdb
