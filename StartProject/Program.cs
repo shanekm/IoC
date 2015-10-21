@@ -58,7 +58,6 @@ namespace StartProject
             return "Swiping Visa";
         }
 
-
         public int ChargeCount
         {
             get
