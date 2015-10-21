@@ -39,7 +39,7 @@
             // Creation of creditCard object is moved outside Shopper class() => IoC
             ICreditCard creditCard = new MasterCard();
             Shopper shopper = new Shopper();
-            //shopper.CreditCard = creditCard;
+            //   shopper.CreditCard = creditCard;
 
             // Setter injection happends here
 
@@ -58,7 +58,7 @@
             Shopper shopper = new Shopper();
             
             // Inject creditCard object to shopper
-            //((IDependentOnCreditCard)shopper).Inject(creditCard);
+            //   ((IDependentOnCreditCard)shopper).Inject(creditCard);
 
             public interface IDependentOnCreditCard
             {
