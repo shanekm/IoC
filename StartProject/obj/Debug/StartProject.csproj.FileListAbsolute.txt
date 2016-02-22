@@ -1,3 +1,8 @@
 C:\Users\Shane.Kmiecik\Documents\Visual Studio 2013\Projects\IoC\StartProject\bin\Debug\StartProject.exe.config
 C:\Users\Shane.Kmiecik\Documents\Visual Studio 2013\Projects\IoC\StartProject\obj\Debug\StartProject.exe
 C:\Users\Shane.Kmiecik\Documents\Visual Studio 2013\Projects\IoC\StartProject\obj\Debug\StartProject.pdb
+C:\dev\IoC\StartProject\bin\Debug\StartProject.exe.config
+C:\dev\IoC\StartProject\bin\Debug\StartProject.exe
+C:\dev\IoC\StartProject\bin\Debug\StartProject.pdb
+C:\dev\IoC\StartProject\obj\Debug\StartProject.exe
+C:\dev\IoC\StartProject\obj\Debug\StartProject.pdb

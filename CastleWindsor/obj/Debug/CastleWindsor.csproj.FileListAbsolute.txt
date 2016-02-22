@@ -10,3 +10,11 @@ C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\CastleWindsor\b
 C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\CastleWindsor\obj\Debug\CastleWindsor.csprojResolveAssemblyReference.cache
 C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\CastleWindsor\obj\Debug\CastleWindsor.exe
 C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\CastleWindsor\obj\Debug\CastleWindsor.pdb
+C:\dev\IoC\CastleWindsor\bin\Debug\CastleWindsor.exe.config
+C:\dev\IoC\CastleWindsor\bin\Debug\CastleWindsor.exe
+C:\dev\IoC\CastleWindsor\bin\Debug\CastleWindsor.pdb
+C:\dev\IoC\CastleWindsor\bin\Debug\StartProject.exe
+C:\dev\IoC\CastleWindsor\bin\Debug\StartProject.pdb
+C:\dev\IoC\CastleWindsor\obj\Debug\CastleWindsor.csprojResolveAssemblyReference.cache
+C:\dev\IoC\CastleWindsor\obj\Debug\CastleWindsor.exe
+C:\dev\IoC\CastleWindsor\obj\Debug\CastleWindsor.pdb

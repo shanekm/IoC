@@ -10,3 +10,17 @@ C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\StructureMap\bi
 C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\StructureMap\obj\Debug\StructureMap.csprojResolveAssemblyReference.cache
 C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\StructureMap\obj\Debug\StructureMap.exe
 C:\Users\Shane.Kmiecik\documents\visual studio 2013\Projects\IoC\StructureMap\obj\Debug\StructureMap.pdb
+C:\dev\IoC\StructureMap\bin\Debug\StructureMap.exe.config
+C:\dev\IoC\StructureMap\bin\Debug\StructureMap.exe
+C:\dev\IoC\StructureMap\bin\Debug\StructureMap.pdb
+C:\dev\IoC\StructureMap\bin\Debug\Moq.dll
+C:\dev\IoC\StructureMap\bin\Debug\StartProject.exe
+C:\dev\IoC\StructureMap\bin\Debug\StructureMap.dll
+C:\dev\IoC\StructureMap\bin\Debug\StructureMap.Net4.dll
+C:\dev\IoC\StructureMap\bin\Debug\StartProject.pdb
+C:\dev\IoC\StructureMap\bin\Debug\Moq.xml
+C:\dev\IoC\StructureMap\bin\Debug\StructureMap.xml
+C:\dev\IoC\StructureMap\bin\Debug\StructureMap.Net4.pdb
+C:\dev\IoC\StructureMap\obj\Debug\StructureMap.csprojResolveAssemblyReference.cache
+C:\dev\IoC\StructureMap\obj\Debug\StructureMap.exe
+C:\dev\IoC\StructureMap\obj\Debug\StructureMap.pdb

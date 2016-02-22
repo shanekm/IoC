@@ -12,3 +12,18 @@ c:\users\shane.kmiecik\documents\visual studio 2013\Projects\IoC\Unity\bin\Debug
 c:\users\shane.kmiecik\documents\visual studio 2013\Projects\IoC\Unity\obj\Debug\Unity.csprojResolveAssemblyReference.cache
 c:\users\shane.kmiecik\documents\visual studio 2013\Projects\IoC\Unity\obj\Debug\Unity.exe
 c:\users\shane.kmiecik\documents\visual studio 2013\Projects\IoC\Unity\obj\Debug\Unity.pdb
+C:\dev\IoC\Unity\bin\Debug\Unity.exe.config
+C:\dev\IoC\Unity\bin\Debug\Unity.exe
+C:\dev\IoC\Unity\bin\Debug\Unity.pdb
+C:\dev\IoC\Unity\bin\Debug\Moq.dll
+C:\dev\IoC\Unity\bin\Debug\StartProject.exe
+C:\dev\IoC\Unity\bin\Debug\StructureMap.dll
+C:\dev\IoC\Unity\bin\Debug\StructureMap.Net4.dll
+C:\dev\IoC\Unity\bin\Debug\StartProject.pdb
+C:\dev\IoC\Unity\bin\Debug\Moq.xml
+C:\dev\IoC\Unity\bin\Debug\StructureMap.pdb
+C:\dev\IoC\Unity\bin\Debug\StructureMap.xml
+C:\dev\IoC\Unity\bin\Debug\StructureMap.Net4.pdb
+C:\dev\IoC\Unity\obj\Debug\Unity.csprojResolveAssemblyReference.cache
+C:\dev\IoC\Unity\obj\Debug\Unity.exe
+C:\dev\IoC\Unity\obj\Debug\Unity.pdb

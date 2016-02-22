@@ -1,14 +1,12 @@
-﻿namespace Ninject
+﻿using System;
+using Ninject.Modules;
+using StartProject;
+
+namespace Ninject
 {
-    using System;
-
-    using Ninject.Modules;
-
-    using StartProject;
-
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             // REGISTRATION
             var kernel = new StandardKernel();
@@ -30,10 +28,10 @@
             // Configure or do something prior to returning a concrete type. Lots of power
             kernel.Bind<ICreditCard>().ToMethod(
                 context =>
-                    {
-                        Console.WriteLine("Creating new card!");
-                        return new MasterCard();
-                    });
+                {
+                    Console.WriteLine("Creating new card!");
+                    return new MasterCard();
+                });
 
             // Put everything in one place
             var kernel2 = new StandardKernel(new MyModule());
@@ -47,5 +45,4 @@
             Kernel.Bind<ICreditCard>().To<MasterCard>();
         }
     }
-
 }

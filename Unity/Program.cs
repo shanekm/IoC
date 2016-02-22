@@ -1,68 +1,163 @@
-﻿namespace Unity
+﻿using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
+using System.Web;
+using Moq;
+
+namespace StructureMap
 {
     using System;
-
-    using Microsoft.Practices.Unity;
     using StartProject;
+    using StructureMap.Configuration.DSL;
+    using StructureMap.Pipeline;
 
-    class Program
+    public class Program
     {
+        public static Container sContainer { get; set; }
         static void Main(string[] args)
         {
-            var container = new UnityContainer();
-
-            // Main Usage
-            // 1. RegisterType<T, TConcrete>()
-            // 2. Resolve<T>()
-
             // REGISTRATION
-            // Register MasterCard => whenever I want ICreditCard resolve it to MasterCard
-            container.RegisterType<ICreditCard, MasterCard>();
+            var container = new Container();
+            // Register MasterCard conrete type to ICreditCard
+            container.Configure(x => x.For<ICreditCard>().Use<MasterCard>());
 
-            // Example - when creating MasterCard also set it's property ChargeCount
-            // Give me as MasterCard and set ChargeCount property to 5
-            container.RegisterType<ICreditCard, MasterCard>(
-                new InjectionProperty("ChargeCount", 5));
+            // Shopper class has ICreditCard in it's constructor
+            // IoC will automatically get concrete type to MasterCard
+            var shopper = container.GetInstance<Shopper>();
+            shopper.Charge();
 
-            // From now on VisaCard will be instantiatied as DefaultCard => DefaultCard()
-            container.RegisterType<ICreditCard, VisaCard>("DefaultCard");
+            // LIFECYCLE
+            // Default lifecycle is "PerRequest"
+            // Specify your own this way
+            container.Configure(x => x.For<ICreditCard>().LifecycleIs(new SingletonLifecycle()));
 
-            // Resolve to MasterCard instance
-            var card = new MasterCard();
-            container.RegisterInstance(card);
+            // FEATURES
+            // TryGet => see if available => returns null if ICreditCard is NOT registered
+            container.TryGetInstance<ICreditCard>();
 
-            // USING CONTAINER
-            // Shopper doesn't need to be registered as it is NOT Interface (Unity feature)
-            var shopper = container.Resolve<Shopper>();
+            // Debugging => will show you what you have in container
+            Console.WriteLine(container.WhatDoIHave());
 
-            // Overload
-            // Even though we may have registered ICreditCard to be resolved to MasterCard
-            // it will be overwritten with VisaCard()
-            var shopper2 = container.Resolve<Shopper>(new ParameterOverride("creditCard", new VisaCard()));
 
-            // LIFE CYCLE OF OBJECT
-            // Create a singleton - only one instance for two shoppers below
-            container.RegisterType<ICreditCard, MasterCard>(new ContainerControlledLifetimeManager());
-            var shopper3 = container.Resolve<Shopper>();
-            
-            // When shopper3 increments a charge shopper5 will see that change
-            // both are using singleton ContainerControlledLifetimeManager()
-            shopper3.Charge();
-            Console.WriteLine(shopper3.ChargesForCurrentCard);
 
-            var shopper5 = container.Resolve<Shopper>();
-            Console.WriteLine(shopper5.ChargesForCurrentCard);
+            sContainer = new Container();
+            sContainer.Configure(x => x.For<ICreditCard>().Use<MasterCard>());
 
-            // UNITY FEATURES
-            // Intercept a creation of types inside a container
-            //container.AddExtension();
 
-            // BuildUp method() => it would inject myClass to dependent class
-            var myClass = new object();
-            container.BuildUp(myClass);
+            // Put registration into one registry class
+            container = new Container(new MyRegistry());
 
-            // ResolveAll()
-            // Resolved all in a list
+            // Testing named instance
+            var classA = container.GetInstance<ClassA>();
+            var classB = container.GetInstance<ClassB>();
+
+            //var c = new StructureMap.Container(ce =>
+            //{
+            //    ce.ForRequestedType<ICreditCard>().TheDefaultIsConcreteType<VisaCard>();
+            //});
+            //var test = c.GetInstance<ICreditCard>();
+
+            //var mock = new Mock<Container>();
+            //var t1 = mock.Setup(x => x.GetInstance<ICreditCard>()).Returns(new VisaCard());
+
+            //IoC.Initialize();
+            //var ccc = IoC.container.GetInstance<ICreditCard>();
+
+            var mock = new Mock<IContainer>();
+            var tt = mock.Object;
+
+            mock.Setup(x => x.GetInstance<ICreditCard>()).Returns(new MasterCard());
+            //var tt2 = mock.Object.GetInstance<ICreditCard>();
+
+            var worker = new Worker();
+            worker.Work(mock.Object);
+
+            var m = new Mock<HttpContextBase>();
+            //var t2 = m.Setup(x => x.Request).Returns();
+        }
+    }
+    //public static class IoC
+    //{
+    //    public static IContainer container;
+    //    public static IContainer Initialize()
+    //    {
+    //        ObjectFactory.Initialize(x =>
+    //        {
+    //            x.For<ICreditCard>().Use<VisaCard>();
+    //        });
+
+    //        container = ObjectFactory.Container;
+    //        return container;
+    //    }
+    //}
+    public class Worker
+    {
+        public void Work(IContainer container)
+        {
+            //var c = new StructureMap.Container(ce =>
+            //{
+            //    ce.ForRequestedType<ICreditCard>().TheDefaultIsConcreteType<VisaCard>();
+            //});
+
+
+            var cc = container.GetInstance<ICreditCard>();
+            var test = cc;
+        }
+    }
+
+    public class MyRegistry : Registry
+    {
+        // Do all the work in constructor
+        public MyRegistry()
+        {
+            For<ICreditCard>().Use<MasterCard>();
+            For<ICreditCard>().LifecycleIs(new SingletonLifecycle());
+
+            // Named instances
+            For<ClassA>()
+                .Use<ClassA>()
+                .Ctor<IService>("service").Is<ServiceA>();
+
+            For<ClassB>()
+                .Use<ClassB>()
+                .Ctor<IService>("service").Is<ServiceB>();
+
+            //c.For<IDbConnection>().Use<SqlConnection>().Ctor<string>().Is("YOUR_CONNECTION_STRING");
+            // For<IUsingInterface>().Add<UsingInterfaceImpl>().Ctor<IMyInterface>().Is(i => i.GetInstance<IMyInterface>("MyInterfaceImpl1"));
+            //For<IConnector>().Add<ConnectorA>().Ctor<ConnectorA>().Is(i => i.GetInstance<ConnectorA>());
+        }
+    }
+
+    public interface IService
+    { }
+
+    public class ServiceA : IService
+    { }
+
+    public class ServiceB : IService
+    { }
+
+    public class ClassA
+    {
+        public IService service { get; set; }
+        public ICreditCard CreditCard { get; set; }
+
+        public ClassA(IService service, ICreditCard credit)
+        {
+            this.service = service;
+            this.CreditCard = credit;
+        }
+    }
+
+    public class ClassB
+    {
+        public IService service { get; set; }
+        public ICreditCard CreditCard { get; set; }
+
+        public ClassB(IService service, ICreditCard credit)
+        {
+            this.service = service;
+            this.CreditCard = credit;
         }
     }
 }
